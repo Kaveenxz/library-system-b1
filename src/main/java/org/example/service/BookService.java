@@ -13,4 +13,6 @@ public interface BookService {
     List<BookEntity> getBook();
 
     boolean deleteBook(Long id);
+
+    Book findBookById(Long id);
 }
