@@ -30,6 +30,15 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<BookEntity> getBook() {
-        return (List<BookEntity>) repository.findAll();
+        return repository.findAll();
+    }
+
+    @Override
+    public boolean deleteBook(Long id) {
+        if(repository.existsById(id)){
+            repository.deleteById(id);
+            return true;
+        }
+        return false;
     }
 }

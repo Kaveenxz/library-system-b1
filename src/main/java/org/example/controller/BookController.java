@@ -5,9 +5,8 @@ import org.example.dto.Book;
 import org.example.entity.BookEntity;
 import org.example.service.BookService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/book")
@@ -26,5 +25,13 @@ public class BookController {
     @GetMapping()
     public Iterable<BookEntity> getBook(){
         return service.getBook();
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
+    public ResponseEntity<String> deleteBook(@PathVariable Long id){
+       return service.deleteBook(id) ?
+               ResponseEntity.ok("Deleted") :
+               ResponseEntity.ok("Not deleted");
     }
 }
