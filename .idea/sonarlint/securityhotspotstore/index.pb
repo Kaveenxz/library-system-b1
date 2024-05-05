@@ -77,3 +77,7 @@ w
 G.idea/sonarlint/issuestore/f/b/fbaa39d1f9ba0b97d873b6881d0d945ccb9b36c8,1\c\1c08bb10d875f2159def7d243a3e50145739d46e
 w
 G.idea/sonarlint/issuestore/f/9/f9102f42561e946daf4a20464b74325534d73403,c\7\c703004a1bd857df452d7bcf50fb3097e535baed
+h
+8src/main/java/org/example/repository/BookRepository.java,b\7\b7783d39ca81aa027ce3a0f700c9f233ca4aa9da
+`
+0src/main/java/org/example/entity/BookEntity.java,8\e\8e7bab507d9e728ef6cf98c958018520dba04ab5
